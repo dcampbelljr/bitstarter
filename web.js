@@ -9,7 +9,6 @@ app.get('/', function(request, response) {
 fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   response.send(data.toString('utf-8'));
-  console.log(data.toString('utf-8'));
 });
 });
 
